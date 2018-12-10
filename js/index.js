@@ -1,7 +1,10 @@
 document.forms['registerForm']['btnSubmit'].onclick = function () {
-    if(validateForm()){
-     doRegister();   
-    }
+    var phone = document.forms['registerForm']['phone'];
+    alert(phone.value);
+
+    // if(validateForm()){
+    //  doRegister();
+    // }
 };
 
 function validateForm() {
@@ -70,11 +73,11 @@ function doRegister() {
     var txtIntroduction = document.forms['registerForm']['introduction'].value;
     var mainContent = document.getElementById('main-content');
     var htmlContent = '';
-        htmlContent += '<p>Họ và tên:'+ txtName +'</p>';
-        htmlContent += '<p>Email:'+ txtEmail +'</p>';
-        htmlContent += '<p>Phone:'+ txtPhone +'</p>';
-        htmlContent += '<p>Giới tính:'+ txtGender +'</p>';
-        htmlContent += '<p>Sở thích:'+ txtLike +'</p>';
-        htmlContent += '<p>Giới thiệu về bản thân:'+ txtIntroduction +'</p>';
+    htmlContent += '<p>Họ và tên: ' + txtName + '</p>';
+    htmlContent += '<p>Email: '+ txtEmail + '</p>';
+    htmlContent += '<p>Phone: '+ txtPhone + '</p>';
+    htmlContent += '<p>Giới tính: '+ txtGender + '</p>';
+    htmlContent += '<p>Sở thích: '+ txtLike + '</p>';
+    htmlContent += '<p>Giới thiệu về bản thân: ' + txtIntroduction + '</p>';
     mainContent.innerHTML = htmlContent;
 }
