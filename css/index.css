@@ -1,6 +1,12 @@
 /* For mobile phones: */
 @media only screen and (min-width: 1px){
     [class*="col-"] {width: 100%;}
+    .aside{
+        height: 0;
+    }
+    .main-content .label{
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -17,6 +23,12 @@
     .col-t-10 {width: 83.33%;}
     .col-t-11 {width: 91.66%;}
     .col-t-12 {width: 100%;}
+    .aside{
+        height: 35em;
+    }
+    .main-content .label{
+        text-align: right;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -33,6 +45,12 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    .aside{
+        height: 35em;
+    }
+    .main-content .label{
+        text-align: right;
+    }
 }
 
 .row::after{
@@ -75,11 +93,7 @@
     font-size: 20px;
 }
 
-.main-content .label{
-    text-align: right;
-}
-
-.main-content .input {
+.main-content .input-info {
     width: 90%;
 }
 
